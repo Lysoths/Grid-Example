@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 4rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 13fr 4fr;
+  gap: 1rem;
+}
+
+.container-left-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.container-right-side {
+  background-color: pink;
+}
+
+.container-left-inside-1 {
+  display: grid;
+  grid-template-columns: 10fr 5fr;
+
+  gap: 1.5rem;
+}
+
+.container-left-inside-2 {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container-left-inside-1 {
+    grid-template-columns: 350px !important;
+  }
+  .container-left-inside-2 {
+    grid-template-columns: 350px !important;
+  }
+
+  .container {
+    grid-template-columns: 350px !important;
+    justify-content: center;
+  }
+
+  body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    padding: 50px;
+    transform: translatey(0%);
+  }
+}
+
+.box1 {
+  background-color: hsl(263, 55%, 52%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.box2 {
+  background-color: hsl(217, 19%, 35%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.box3 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  height: 100%;
+}
+
+.box4 {
+  background-color: hsl(219, 29%, 14%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  height: 100%;
+}
+
+.box5 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  height: 100%;
+}
+
+.info img {
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info p {
+  margin: 0.3rem 0;
+}
+
+.header {
+  margin: 1rem 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.header h1 {
+  font-weight: 600;
+}
+
+.text {
+  text-align: justify;
+}
+
+.box1 .info .name .name1 {
+  color: hsl(210, 46%, 95%);
+  font-weight: 600;
+}
+
+.box1 .info .name .verifed {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+.box1 .article .text {
+  color: hsla(0, 0%, 81%, 0.699);
+}
+
+.box2 .info .name .name1 {
+  color: hsl(210, 46%, 95%);
+  font-weight: 600;
+}
+
+.box2 .info .name .verifed {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+.box2 .article .text {
+  color: hsla(0, 0%, 81%, 0.699);
+}
+
+.box3 .info .name .name1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+
+.box3 .info .name .verifed {
+  color: hsla(0, 0%, 53%, 0.788);
+}
+
+.box3 .article .header {
+  color: hsla(217, 30%, 14%, 0.699);
+}
+
+.box3 .article .text {
+  color: hsla(217, 19%, 35%, 0.699);
+  font-weight: 500;
+}
+
+.box4 .info .name .name1 {
+  color: hsl(210, 46%, 95%);
+  font-weight: 600;
+}
+
+.box4 .info .name .verifed {
+  color: hsla(0, 0%, 53%, 0.788);
+}
+
+.box4 .article .text {
+  color: hsla(0, 0%, 81%, 0.699);
+  font-weight: 500;
+}
+
+.box5 .info .name .name1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+
+.box5 .info .name .verifed {
+  color: hsl(0, 0%, 53%);
+}
+
+.box5 .article .header {
+  color: hsla(217, 30%, 14%, 0.699);
+}
+
+.box5 .article .text {
+  color: hsla(217, 19%, 35%, 0.699);
+  font-weight: 500;
+}
